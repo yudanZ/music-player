@@ -1,0 +1,130 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    min-height: 100vh;
+}
+
+.container {
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-container {
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+  
+h3 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    margin: 5px 0 0;
+}
+
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    margin: 20px auto;
+    height: 4px;
+    
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    width: 0%;
+    background:#242323;
+    transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+    width: 100%;
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-controls {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+}
+
+  .fas {
+    font-size: 30px;
+    color: rgb(129, 129, 129);
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .fas:hover {
+    filter: brightness(80%);
+  }
+  
+  .main-button {
+    font-size: 40px;
+    position: relative;
+
+  }
+
+  @media screen and (max-width: 800px){
+
+    .container {
+        width: 80%;
+        height: 80%; 
+        margin: 5px auto;
+        
+    }
+    .image-container {
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+        
+    }
+
+    h2 {
+        font-size: 20px; 
+    }
+      
+    h3 {
+        font-size: 16px;  
+    }
+
+    .fas {
+        font-size: 20px;
+        margin-right: 20px;
+        
+      }
+  }
